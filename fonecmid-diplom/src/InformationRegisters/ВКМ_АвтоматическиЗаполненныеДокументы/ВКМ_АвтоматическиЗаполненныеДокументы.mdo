@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8752410-4801-49f5-ada8-055ac7d7101e">
+  <producedTypes>
+    <selectionType typeId="1c03e6b8-56cd-4a99-99f2-cd634674b46a" valueTypeId="23ee3e02-10ee-4be9-9253-09ba8b56cba0"/>
+    <listType typeId="3a948996-a997-4c2a-8a68-2b7c6c427003" valueTypeId="4fd05022-be01-4655-b5ba-92b2fcead56c"/>
+    <managerType typeId="4b948739-afb8-4f62-bc4e-b4700b27d4ea" valueTypeId="ace462b6-ed29-4d0d-ae70-75488edb8f1e"/>
+    <recordSetType typeId="0598d124-f271-4f1d-8db1-a393ddc08cee" valueTypeId="9dcb53f1-1d19-4184-becc-742c4b370e42"/>
+    <recordKeyType typeId="3893a9d9-c079-4328-8570-5087bafae5f2" valueTypeId="0873a669-837d-434a-ba59-ac86a10fd7ea"/>
+    <recordType typeId="78c25c60-b975-4b91-ae0b-6f25a4752f6d" valueTypeId="7fef29a7-5776-44aa-a4ab-3259d95fc7c3"/>
+    <recordManagerType typeId="e59fef05-548d-4bcc-93be-debd8cd32b9c" valueTypeId="70419cc7-b95d-4a54-93fd-830d291dade9"/>
+  </producedTypes>
+  <name>ВКМ_АвтоматическиЗаполненныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автоматически заполненные документы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="2b908227-4049-4af0-8293-45724e52b62d">
+    <name>Реализация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="10da0348-de7e-4f85-a201-14a454db1553">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

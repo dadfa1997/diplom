@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c646d72-5d9a-4d52-9efd-d326f6b5950d">
+  <producedTypes>
+    <managerType typeId="aac107e0-b84b-4ef4-ac0a-d0c97e615161" valueTypeId="47e6860c-f880-4a5d-b21a-094ef9d9a79b"/>
+    <valueManagerType typeId="524508c0-353a-499e-9b41-e552efa1f4b8" valueTypeId="0ad7874d-ae0b-47fb-80a8-2a8e14eb2b3c"/>
+    <valueKeyType typeId="a20e55c8-7fc3-4617-a8f3-45014ac79770" valueTypeId="b460cc3e-4bd1-4069-bed7-104ba8fb5cb3"/>
+  </producedTypes>
+  <name>ВКМ_БелыйIP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Белый IP</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>255</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

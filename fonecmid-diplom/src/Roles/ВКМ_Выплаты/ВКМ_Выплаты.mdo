@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a9a7d43-8484-422d-823c-b51ea8f75796">
+  <name>ВКМ_Выплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ выплаты</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17f12d9e-1a24-410f-af6b-2df1da60e9af">
+  <producedTypes>
+    <objectType typeId="fae9df30-4922-4189-a3ac-2a8a170d4e82" valueTypeId="c1ed65bd-f47c-48fb-a9b9-6b5762540e83"/>
+    <refType typeId="ce9a455b-9a53-437e-9b3d-36376ed8ecf4" valueTypeId="945d2f5e-1c6a-4a70-9deb-34f97e5e2788"/>
+    <selectionType typeId="fe8646fc-c758-4c42-8e2b-433399fd75c2" valueTypeId="3b5c1530-65ab-4540-af4f-1172b58ad756"/>
+    <listType typeId="a35966c9-e058-450f-81d4-75b408e3deac" valueTypeId="9ff724b5-3f01-41f5-8c47-1c374882976c"/>
+    <managerType typeId="3c3ed8c2-3a71-477f-a156-ebfc784c0d11" valueTypeId="79b38392-833e-472a-b8ef-ed72582e38cd"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_Удержания.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Удержания сотрудникам</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_Удержания.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="dc43f08f-4ff7-43d7-83df-63bba0f97867">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="5c23fc72-0557-4706-8e29-01d30116afc1">
+    <producedTypes>
+      <objectType typeId="7958a679-b7f3-4f8c-a4a0-66cf3e0601fa" valueTypeId="3a645bb2-e045-461f-a68c-7982f2270fd2"/>
+      <rowType typeId="89ecbe59-983c-40ca-9be8-92f7ab7568e2" valueTypeId="51cbc34c-ac38-4e10-b6dd-23093a8041af"/>
+    </producedTypes>
+    <name>УдержанияСотрудникам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удержания сотрудникам</value>
+    </synonym>
+    <attributes uuid="56f71410-76e4-4532-bb97-3c40c952d78e">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="94033e22-f12e-4334-a403-7c9eda15c729">
+      <name>СуммаУдержания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма удержания</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

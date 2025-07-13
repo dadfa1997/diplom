@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba7cd591-a8ba-45e5-ac6e-1b2d7481f7e6">
+  <name>ВКМ_ОбновлениеСекрьюритиКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление секьюрети кода телеграм</value>
+  </synonym>
+  <methodName>CommonModule.ВКМ_УстановитьКодСекьюрити.ВКМ_ОбновлениеСекрьюритиКода</methodName>
+  <description>Установка безопасного кода для телеграмм бота</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

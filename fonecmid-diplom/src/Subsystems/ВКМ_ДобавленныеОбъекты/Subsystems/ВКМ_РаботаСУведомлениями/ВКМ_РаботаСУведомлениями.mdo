@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de2c4959-d34f-41c2-8efb-53f362ed46ba">
+  <name>ВКМ_РаботаСУведомлениями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с уведомлениями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВКМ_ВходящийHTTPЗапрос</content>
+  <content>Catalog.ВКМ_УведомленияТелеграммБота</content>
+  <content>Catalog.ВКМ_УчетныеЗапиписиТелеграмма</content>
+  <parentSubsystem>Subsystem.ВКМ_ДобавленныеОбъекты</parentSubsystem>
+</mdclass:Subsystem>

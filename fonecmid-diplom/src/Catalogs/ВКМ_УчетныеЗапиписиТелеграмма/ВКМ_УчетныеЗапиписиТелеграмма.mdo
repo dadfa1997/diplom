@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd6f5de5-f79d-4126-8057-449afa925658">
+  <producedTypes>
+    <objectType typeId="751f1e4b-f4b4-41eb-965f-16f7825290cb" valueTypeId="3b9143fa-ac7d-4dc9-adf8-d671974ad479"/>
+    <refType typeId="73992132-9569-45a1-b781-70748addf4e5" valueTypeId="6f5ff0ad-df42-4ce8-ac1a-73d2222f7fa0"/>
+    <selectionType typeId="ae959d02-bc0c-4811-af3e-7b0fe131c0b7" valueTypeId="cdbe2351-d544-4cfe-9b90-d8bf29cfce7f"/>
+    <listType typeId="36338557-27ef-42fb-870c-0213225d782b" valueTypeId="79e7ecbd-2636-4151-a982-b26de240a0c2"/>
+    <managerType typeId="6e37824d-6818-429f-b794-a1412692f80e" valueTypeId="02d1d0e4-269c-4687-948d-5b6e8540a165"/>
+  </producedTypes>
+  <name>ВКМ_УчетныеЗапиписиТелеграмма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетные запиписи телеграмма</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_УчетныеЗапиписиТелеграмма.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВКМ_УчетныеЗапиписиТелеграмма.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>25</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВКМ_УчетныеЗапиписиТелеграмма.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="b06188ed-8a9c-4290-86d7-1c40d02ba483">
+    <name>СсылкаНаТелеграмм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на телеграмм</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4ae4b168-09c4-4b58-9963-b48e0640de2c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

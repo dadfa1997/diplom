@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dcc544bc-c7d2-408b-bf5d-ec6c4e8d529d">
+  <name>ВКМ_УстановитьКодСекьюрити</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить секьюрити код</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

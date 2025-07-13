@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e65fea0-91ff-47aa-8f27-d69a1e46932a">
+  <producedTypes>
+    <refType typeId="9c22d2a5-cbc9-438a-9102-733d4d9d628c" valueTypeId="8e71a1e4-0554-45fd-b316-0f971ba80fc0"/>
+    <listType typeId="9524c9da-9122-4b6f-9a48-a4c21f025d6c" valueTypeId="ccc6e88c-4d94-4d3d-9eef-37ebfd8aa45e"/>
+    <managerType typeId="95eb2e2d-9b0e-46c1-86dd-25284864b24c" valueTypeId="2eac4535-6cb5-4099-8376-8b57eaf96a94"/>
+  </producedTypes>
+  <name>СпособРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способ расчета</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ac658bd6-b5c5-447f-ae51-9339da218f4e">
+    <name>ЧасоваяСтавка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часовая ставка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="17aac455-0412-44e0-b888-f96661daf15f">
+    <name>ПремияПоПродажам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Премия по продажам</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
