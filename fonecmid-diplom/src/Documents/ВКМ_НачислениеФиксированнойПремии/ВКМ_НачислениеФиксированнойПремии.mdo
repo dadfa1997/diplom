@@ -24,6 +24,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_НачислениеФиксированнойПремии.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>

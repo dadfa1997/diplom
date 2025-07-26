@@ -89,8 +89,9 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</baseCalculationTypes>
   <standardTabularSections>
     <name>BaseCalculationTypes</name>
@@ -189,6 +190,18 @@
     </standardAttributes>
   </standardTabularSections>
   <predefined>
+    <items id="a6f40185-bf4c-4c19-9646-6750468355a8">
+      <name>НДФЛ</name>
+      <description>НДФЛ</description>
+      <code xsi:type="core:StringValue">
+        <value>НДФЛ</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</base>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</leading>
+    </items>
     <items id="6b8994a0-527e-40df-b871-cb810bfb130d">
       <name>Штраф</name>
       <description>Штраф</description>

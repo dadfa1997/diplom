@@ -9,6 +9,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Сотрудник</dataPath>
 			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПлановыйОтпуск</dataPath>
@@ -20,17 +23,16 @@
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ВКМ_ОсновныеНачисленияДанныеГрафика.Сотрудник КАК Сотрудник,
-	СУММА(ВКМ_ОсновныеНачисленияДанныеГрафика.ПлановыйОтпуск) КАК ПлановыйОтпуск,
-	СУММА(ВКМ_ОсновныеНачисленияДанныеГрафика.ОтгуленныйОтпуск) КАК ОтгуленныйОтпуск
+	ВКМ_ДвиженияПоОтпускамОстаткиИОбороты.Сотрудник КАК Сотрудник,
+	СУММА(ВКМ_ДвиженияПоОтпускамОстаткиИОбороты.ОтпускДнейПриход) КАК ПлановыйОтпуск,
+	СУММА(ВКМ_ДвиженияПоОтпускамОстаткиИОбороты.ОтпускДнейРасход) КАК ОтгуленныйОтпуск
 ИЗ
-	РегистрРасчета.ВКМ_ОсновныеНачисления.ДанныеГрафика КАК ВКМ_ОсновныеНачисленияДанныеГрафика
+	РегистрНакопления.ВКМ_ДвиженияПоОтпускам.ОстаткиИОбороты КАК ВКМ_ДвиженияПоОтпускамОстаткиИОбороты
 ГДЕ
-	ВКМ_ОсновныеНачисленияДанныеГрафика.Сотрудник В (&amp;Сотрудник)
-	И ВКМ_ОсновныеНачисленияДанныеГрафика.ПериодРегистрации МЕЖДУ &amp;Начало И &amp;Конец
+	ВКМ_ДвиженияПоОтпускамОстаткиИОбороты.Сотрудник В (&amp;Сотрудник)
 
 СГРУППИРОВАТЬ ПО
-	ВКМ_ОсновныеНачисленияДанныеГрафика.Сотрудник</query>
+	ВКМ_ДвиженияПоОтпускамОстаткиИОбороты.Сотрудник</query>
 	</dataSet>
 	<parameter>
 		<name>Сотрудник</name>
@@ -45,42 +47,6 @@
 		</valueType>
 		<useRestriction>false</useRestriction>
 		<valueListAllowed>true</valueListAllowed>
-	</parameter>
-	<parameter>
-		<name>Конец</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Конец</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;Период.ДатаОкончания</expression>
-	</parameter>
-	<parameter>
-		<name>Начало</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Начало</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;Период.ДатаНачала</expression>
 	</parameter>
 	<parameter>
 		<name>Период</name>
@@ -99,6 +65,42 @@
 			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 		</value>
 		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>

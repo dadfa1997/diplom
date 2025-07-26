@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee64e666-dd6a-4d47-a872-31f4458344dd">
+  <name>ВКМ_ДляРахработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ для рахработки</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

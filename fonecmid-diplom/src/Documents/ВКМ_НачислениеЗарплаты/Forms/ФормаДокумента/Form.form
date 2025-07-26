@@ -264,6 +264,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.ОсновныеНачисления.ДатаНачала</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ОсновныеНачисленияДатаНачалаПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ОсновныеНачисленияДатаНачалаРасширеннаяПодсказка</name>
         <id>34</id>
@@ -341,6 +345,10 @@
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <handlers>
+      <event>OnChange</event>
+      <name>ОсновныеНачисленияПриИзменении</name>
+    </handlers>
     <searchStringAddition>
       <name>ОсновныеНачисленияСтрокаПоиска</name>
       <id>14</id>

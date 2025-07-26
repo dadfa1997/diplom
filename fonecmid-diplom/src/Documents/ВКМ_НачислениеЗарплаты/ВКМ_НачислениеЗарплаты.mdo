@@ -24,8 +24,10 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ДвиженияПоОтпускам</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="bbe0fd4d-8430-4fd2-9a99-80c6a107f54d">

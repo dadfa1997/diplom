@@ -773,13 +773,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CalculationRegister.ВКМ_ОсновныеНачисления.Attribute.Размер</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Subsystem.ПокупкиИПродажи.Subsystem.Операции</name>
 		<right>
 			<name>View</name>

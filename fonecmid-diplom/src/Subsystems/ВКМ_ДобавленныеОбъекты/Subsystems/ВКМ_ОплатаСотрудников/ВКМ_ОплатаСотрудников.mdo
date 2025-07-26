@@ -14,5 +14,6 @@
   <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
   <content>Document.ВКМ_Удержания</content>
   <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>AccumulationRegister.ВКМ_ДвиженияПоОтпускам</content>
   <parentSubsystem>Subsystem.ВКМ_ДобавленныеОбъекты</parentSubsystem>
 </mdclass:Subsystem>

@@ -6,6 +6,6 @@
     <value>ВКМ обход справочника уведомления</value>
   </synonym>
   <server>true</server>
-  <externalConnection>true</externalConnection>
   <clientOrdinaryApplication>true</clientOrdinaryApplication>
+  <serverCall>true</serverCall>
 </mdclass:CommonModule>

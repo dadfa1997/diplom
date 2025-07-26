@@ -29,6 +29,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_Отпуска.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ДвиженияПоОтпускам</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="17868a5d-c3f4-4f7e-9e0a-c9cf5b036ca8">
